@@ -77,7 +77,12 @@ body {
 
 .content {
     flex: 1;
-    /* Nội dung chính chiếm phần lớn diện tích */
+}
+
+.article-container{
+    margin-left: 200px; /* Mặc định cho màn hình lớn */
+    padding: 20px;
+    display:block;
 }
 
 .ad-container {
@@ -112,7 +117,7 @@ body {
     align-items: flex-start; /* Đổi thành flex-start để nội dung không bị ép giữa */
     padding: 20px;
     width: 100%; /* Đảm bảo cv chiếm toàn bộ chiều rộng còn lại */
-    margin-left:100px;
+    margin-left:0;
     padding:20px;
 }
 
