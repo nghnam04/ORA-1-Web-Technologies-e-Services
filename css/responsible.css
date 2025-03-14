@@ -1,5 +1,12 @@
 /* 🔹 Responsive cho iPad (768px - 1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
+    .article-container {
+        margin-left: 0 !important; /* Loại bỏ khoảng cách thừa */
+        width: 100% !important; /* Đảm bảo chiếm toàn bộ chiều rộng */
+        padding: 10px !important; /* Thêm padding nhỏ để không dính mép */
+        display: block !important; /* Hiển thị lại nếu bị ẩn */
+    }
+    
     /* Ẩn sidebar hoàn toàn */
     .w3-sidebar {
         display: none !important;
@@ -41,6 +48,12 @@
 
 /* 🔹 Responsive cho điện thoại (< 768px) */
 @media (max-width: 768px) {
+    .article-container {
+        margin-left: 0 !important; /* Loại bỏ khoảng cách thừa */
+        width: 100% !important; /* Đảm bảo chiếm toàn bộ chiều rộng */
+        padding: 10px !important; /* Thêm padding nhỏ để không dính mép */
+        display: block !important; /* Hiển thị lại nếu bị ẩn */
+    }
     /* Ẩn sidebar hoàn toàn */
     .w3-sidebar {
         display: none !important;
