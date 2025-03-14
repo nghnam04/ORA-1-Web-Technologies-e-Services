@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT4409 - Thông tin sinh viên</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsible.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <!-- Icon ☰ chỉ hiển thị trên iPad & điện thoại -->
+<div class="scroll-container" onclick="toggleDropdown()">☰</div>
+
+<!-- Dropdown menu -->
+<div id="dropdown-menu" class="dropdown-menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="courseinfo.html">Thông tin môn học</a>
+    <a href="webtech.html">Các công nghệ Web</a>
+    <a href="studentinfo.html">Thông tin sinh viên</a>
+</div>
+
+<script>
+function toggleDropdown() {
+    var menu = document.getElementById("dropdown-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+    <!-- Header -->
+    <div class="w3-bar w3-black w3-top">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Trang chủ</a>
+        <a href="courseinfo.html" class="w3-bar-item w3-button w3-padding-large">Thông tin môn học</a>
+        <a href="webtech.html" class="w3-bar-item w3-button w3-padding-large">Các công nghệ Web</a>
+        <a href="studentinfo.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Thông tin sinh viên</a>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px;">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#hocvan" class="w3-bar-item w3-button">Học vấn</a>
+        <a href="#kn" class="w3-bar-item w3-button">Kinh nghiệm làm việc</a>
+        <a href="#sothich" class="w3-bar-item w3-button">Sở thích</a>
+        <a href="#kynang" class="w3-bar-item w3-button">Kỹ năng</a>
+    </div>
+
+    <div class="container">
+        <div class="content">
+              <!-- Main Content -->
+              <div class ="cv">
+                <div class="cv-container">
+                    <div class="header">
+                        <img src="images/anhthe.jpg" alt="Ảnh đại diện" class="avatar" height="400" width="150">
+                        <div class="info">
+                            <h1>Nguyễn Hoàng Nam</h1>
+                            <p>💼 Sinh Viên</p>
+                            <p>✉️ nam.nh225213@sis.hust.edu.vn</p>
+                            <p>📍 Quận Hồng Bàng, Hải Phòng</p>
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <h2 id="hocvan">📖 Học Vấn</h2>
+                        <p><strong>2022 - 2026</strong></p>
+                        <p>Đại Học Bách khoa Hà Nội</p>
+                        <p>Khoa Kỹ Thuật Máy Tính</p>
+                    </div>
+            
+                    <div class="section">
+                        <h2 id="kn">🧑🏻‍💼 Kinh Nghiệm Làm Việc</h2>
+                        <p><strong>09/2024 - nay</strong></p>
+                        <ul>
+                            <li>Phát triển giao diện Web tĩnh với HTML, CSS</li>
+                            <li>Tối ưu hiệu suất Website</li>
+                        </ul>
+                    </div>
+            
+                    <div class="section">
+                        <h2 id="sothich">💖 Sở Thích</h2>
+                        <ul>
+                            <li>Lập trình Web</li>
+                            <li>Đọc sách công nghệ</li>
+                            <li>Chơi thể thao</li>
+                        </ul>
+                    </div>
+            
+                    <div class="section">
+                        <h2 id="kynang">💻 Kỹ Năng</h2>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Java</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="parent-container">
+                <a href="https://topdev.vn/blog/frontend-10-ky-nang-quan-trong-de-tim-viec-de-dang-hon/" target="_blank" class="ad-container">
+                    <img src="images/frontend.png" alt="Kỹ năng Front-end Developer" class="ad-image">
+                </a>
+                <a href="https://careerviet.vn/en/talentcommunity/wiki-career/backend-developer-lam-gi-dieu-kien-de-tro-thanh-lap-trinh-vien-backend.35A51EA4.html" target="_blank" class="ad-container">
+                    <img src="images/backend.jpg" alt="Back-end Developer" class="ad-image">
+                </a>
+                <a href="https://isfh.org/bao-mat-website/" target="_blank" class="ad-container">
+                    <img src="images/websecurity.png" alt="Bảo mật Website" class="ad-image">
+                </a>
+            </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-center w3-padding w3-light-grey">
+        <p>&copy; 2024.2 IT4409 - Công nghệ Web và dịch vụ trực tuyến</p>
+    </footer>
+
+</body>
+</html>

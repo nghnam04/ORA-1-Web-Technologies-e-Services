@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT4409 - Công nghệ Web và dịch vụ trực tuyến</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsible.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    
+    <!-- Icon ☰ chỉ hiển thị trên iPad & điện thoại -->
+<div class="scroll-container" onclick="toggleDropdown()">☰</div>
+
+<!-- Dropdown menu -->
+<div id="dropdown-menu" class="dropdown-menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="courseinfo.html">Thông tin môn học</a>
+    <a href="webtech.html">Các công nghệ Web</a>
+    <a href="studentinfo.html">Thông tin sinh viên</a>
+</div>
+
+<script>
+function toggleDropdown() {
+    var menu = document.getElementById("dropdown-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+    <!-- Header -->
+    <div class="w3-bar w3-black w3-top">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+            <img src="images/logo.png" alt="Logo" style="height:30px; width:30px;">
+        </a>
+        <a href="courseinfo.html" class="w3-bar-item w3-button w3-padding-large">Thông tin môn học</a>
+        <a href="webtech.html" class="w3-bar-item w3-button w3-padding-large">Các công nghệ Web</a>
+        <a href="studentinfo.html" class="w3-bar-item w3-button w3-padding-large">Thông tin sinh viên</a>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px;">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#khaigiang" class="w3-bar-item w3-button">Thông tin khai giảng</a>
+        <a href="#seminar" class="w3-bar-item w3-button">Thông tin seminar & hội thảo chuyên đề</a>
+        <a href="#thuctap" class="w3-bar-item w3-button">Cơ hội thực tập và việc làm</a>
+        <a href="#botro" class="w3-bar-item w3-button">Khóa học online bổ trợ</a>
+    </div>
+
+    <div class="container">
+        <div class="content">
+              <!-- Main Content -->
+        <div style="margin-left:200px; padding:20px;">
+            <article>
+                <h2 class="w3-text-teal">Các thông tin liên quan đến vận hành môn học IT4409</h2>
+
+                <h3 class="w3-text-teal" id="khaigiang">Thông tin khai giảng:</h3>
+                <ul>
+                    <li>Các lớp IT4409 thường khai giảng vào đầu học kỳ 1 và học kỳ 2 hằng năm.</li>
+                    <li>Thời gian cụ thể được cập nhật trên hệ thống đào tạo của trường.</li>
+                    <li>Xem lịch khai giảng mới nhất tại:<a href="https://soict.daotao.ai/courses/course-v1%3ASoICT%2BIT4409%2BHoangPH/about?utm_source=chatgpt.com">Lịch khai giảng & đăng ký môn học</a></li>
+                </ul>
+                
+                <h3 class="w3-text-teal" id="seminar">Thông tin seminar & hội thảo chuyên đề:</h3>
+                <p>Môn IT4409 thường xuyên có các buổi seminar để cập nhật công nghệ và trao đổi kinh nghiệm thực tế. Một số sự kiện sắp tới:</p>
+                <p><em>⭐ Seminar: Xu hướng phát triển web 2025</em></p>
+                <ul>
+                    <li><strong>Thời gian:</strong> 15/04/2025</li>
+                    <li><strong>Nội dung:</strong> Cập nhật công nghệ mới về frontend, backend, bảo mật web.</li>
+                    <li><strong>Diễn giả:</strong> Các chuyên gia đến từ VNG, FPT Software.</li>
+                </ul>
+
+                <p><em>⭐ Workshop: Bảo mật ứng dụng web - Thực hành với OWASP</em></p>
+                <ul>
+                    <li><strong>Thời gian:</strong> 22/04/2025</li>
+                    <li><strong>Nội dung:</strong> Trải nghiệm thực tế về tấn công và bảo vệ ứng dụng web</li>
+                    <a><strong>Link đăng ký:</strong><a href="https://soict.hust.edu.vn/seminar-thang-4-2024-truong-cntttt.html?utm_source=chatgpt.com"> Chi tiết hội thảo</a></li>
+                </ul>
+
+                <h3 class="w3-text-teal" id="thuctap">Cơ hội thực tập và việc làm:</h3>
+                <p>Sau khi hoàn thành IT4409, sinh viên có thể ứng tuyển thực tập tại nhiều công ty công nghệ lớn như:</p>
+                <ul>
+                    <li><strong>FPT Software:</strong> Lập trình web (ReactJS, NodeJS, PHP)</li>
+                    <li><strong>VNG Corporation:</strong> Phát triển hệ thống web quy mô lớn</li>
+                    <li><strong>VNPT, Viettel, CMC:</strong> Giải pháp bảo mật và dịch vụ trực tuyến</li>
+                </ul>
+
+                <h3 class="w3-text-teal" id="botro">Khóa học online bổ trợ:</h3>
+                <ul>
+                    <li><strong>Frontend với ReactJS:</strong> <a href="hhttps://www.coursera.org/courses?query=react&utm_medium=sem&utm_source=gg&utm_campaign=b2c_apac_x_coursera_ftcof_career-academy_cx_dr_bau_gg_pmax_gc_s2_all_m_hyb_24-08_x&campaignid=21573875733&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&creativeid=&assetgroupid=6511629686&targetid=&extensionid=&placement=&gad_source=1&gclid=Cj0KCQjw4cS-BhDGARIsABg4_J1tRqXrtzF1J8fA8DE162fJtCfzO07N2gRZGHNMxwxZ0YI1UB_5eIEaAkbaEALw_wcB">Khóa học Coursera</a></li>
+                    <li><strong>Backend với NodeJS:</strong> <a href="https://www.udemy.com/vi/topic/back-end-web-development/?srsltid=AfmBOopEq-xYtSo7BA6Z5YQPIb3T8XT5tiuW5NXrAGtJ9JKunwCZfE9d">Khóa học Udemy</a>.</li>
+                </ul>
+            </article>
+        </div>
+        </div>
+            <div class="parent-container">
+                 <a href="https://topdev.vn/blog/frontend-10-ky-nang-quan-trong-de-tim-viec-de-dang-hon/" target="_blank" class="ad-container">
+                    <img src="images/frontend.png" alt="Kỹ năng Front-end Developer" class="ad-image">
+                </a>
+                <a href="https://careerviet.vn/en/talentcommunity/wiki-career/backend-developer-lam-gi-dieu-kien-de-tro-thanh-lap-trinh-vien-backend.35A51EA4.html" target="_blank" class="ad-container">
+                    <img src="images/backend.jpg" alt="Back-end Developer" class="ad-image">
+                </a>
+                <a href="https://isfh.org/bao-mat-website/" target="_blank" class="ad-container">
+                    <img src="images/websecurity.png" alt="Bảo mật Website" class="ad-image">
+                </a>
+            </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding w3-light-grey">
+        <p>&copy; 2024.2 IT4409 - Công nghệ Web và dịch vụ trực tuyến</p>
+    </footer>
+
+</body>
+</html>

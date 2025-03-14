@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.w3-bar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+/* Sidebar */
+.w3-sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background: #f1f1f1;
+    padding-top: 10px;
+    transition: 0.3s;
+}
+
+/* Main Content */
+.w3-container {
+    margin-top: 60px;
+    margin-left: 220px; /* Dịch phải khi sidebar hiển thị */
+}
+
+/* AD Box */
+.w3-card {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mục menu trong sidebar */
+.w3-sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.w3-sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* Tiêu đề Menu */
+.w3-sidebar h3 {
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 2px solid #000;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    /* Nội dung chính chiếm phần lớn diện tích */
+}
+
+.ad-container {
+    flex-shrink: 0;
+    margin-left: 20px; /* Tạo khoảng cách với nội dung chính */
+    
+}
+
+.ad-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.ad-image:hover {
+    transform: scale(1.05);
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+/* CV Content */
+.cv {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Đổi thành flex-start để nội dung không bị ép giữa */
+    padding: 20px;
+    width: 100%; /* Đảm bảo cv chiếm toàn bộ chiều rộng còn lại */
+    margin-left:100px;
+    padding:20px;
+}
+
+.cv-container {
+    background: white;
+    padding: 20px;
+    width: 100%; /* Thay đổi từ 600px thành 100% để lấp đầy không gian */
+    max-width: 800px; /* Giới hạn tối đa để không quá rộng trên màn hình lớn */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Giữ shadow nhưng không lộ viền */
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info h1 {
+    margin: 0;
+    color: #009688;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section h2 {
+    color: #009688;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 5px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin: 5px 0;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT4409 - Các công nghệ Web</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsible.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    
+    <!-- Icon ☰ chỉ hiển thị trên iPad & điện thoại -->
+<div class="scroll-container" onclick="toggleDropdown()">☰</div>
+
+<!-- Dropdown menu -->
+<div id="dropdown-menu" class="dropdown-menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="courseinfo.html">Thông tin môn học</a>
+    <a href="webtech.html">Các công nghệ Web</a>
+    <a href="studentinfo.html">Thông tin sinh viên</a>
+</div>
+
+<script>
+function toggleDropdown() {
+    var menu = document.getElementById("dropdown-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+    <!-- Header -->
+    <div class="w3-bar w3-black w3-top">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Trang chủ</a>
+        <a href="courseinfo.html" class="w3-bar-item w3-button w3-padding-large">Thông tin môn học</a>
+        <a href="webtech.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Các công nghệ Web</a>
+        <a href="studentinfo.html" class="w3-bar-item w3-button w3-padding-large">Thông tin sinh viên</a>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px;">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#fe" class="w3-bar-item w3-button">Frontend</a>
+        <a href="#be" class="w3-bar-item w3-button">Backend</a>
+        <a href="#i&d" class="w3-bar-item w3-button">Hạ Tầng và Triển Khai</a>
+        <a href="#ws" class="w3-bar-item w3-button">Bảo Mật Web</a>
+    </div>
+
+    <div class="container">
+        <div class="content">
+              <!-- Main Content -->
+        <div style="margin-left:200px; padding:20px;">
+            <article>
+                <h2 class="w3-text-teal">Các công nghệ Web được giới thiệu</h2>
+
+                <h3 class="w3-text-teal" id="fe">Frontend:</h3>
+                <p>Frontend là công nghệ xây dựng giao diện người dùng, phần hiển thị mà người dùng tương tác trực tiếp, được xây dựng bằng:</p>
+                <ul>
+                    <li><strong>HTML:</strong> Ngôn ngữ đánh dấu để tạo cấu trúc trang web.</li>
+                    <li><strong>CSS:</strong> Ngôn ngữ tạo kiểu giúp trang web có bố cục đẹp và thân thiện. Các công nghệ như <strong>Bootstrap, Tailwind CSS</strong> giúp tăng tốc phát triển giao diện.</li>
+                    <li><strong>JavaScript:</strong> Ngôn ngữ lập trình giúp trang web có tính tương tác. Các thư viện và framework phổ biến như <strong>React, Angular, Vue.js</strong> hỗ trợ xây dựng giao diện hiện đại.</li>
+                </ul>
+                
+                <h3 class="w3-text-teal" id="be">Backend:</h3>
+                <p>Backend là phần xử lý phía máy chủ, bao gồm:</p>
+                <ul>
+                    <li><strong>Ngôn ngữ lập trình:</strong> PHP, Node.js, Python (Django, Flask), Ruby on Rails, Java (Spring Boot).</li>
+                    <li><strong>Cơ sở dữ liệu:</strong> MySQL, PostgreSQL, MongoDB, Firebase giúp lưu trữ và quản lý dữ liệu hiệu quả.</li>
+                    <li><strong>API:</strong> RESTful API, GraphQL dùng để kết nối giữa frontend và backend.</li>
+                </ul>
+
+                <h3 class="w3-text-teal" id="i&d">Hạ Tầng và Triển Khai:</h3>
+                <ul>
+                    <li><strong>Máy chủ & Hosting:</strong> AWS, Google Cloud, Microsoft Azure cung cấp giải pháp cloud hosting mạnh mẽ.</li>
+                    <li><strong>Docker & Kubernetes:</strong> Hỗ trợ triển khai ứng dụng dễ dàng trên nhiều môi trường khác nhau.</li>
+                    <li><strong>CI/CD (Continuous Integration/Continuous Deployment):</strong> GitHub Actions, GitLab CI/CD giúp tự động hóa quá trình triển khai.</li>
+                </ul>
+
+                <h3 class="w3-text-teal" id="ws">Bảo Mật Web:</h3>
+                <ul>
+                    <li><strong>HTTPS & SSL/TLS:</strong> Mã hóa dữ liệu truyền tải giữa máy chủ và trình duyệt.</li>
+                    <li><strong>OAuth, JWT:</strong> Cơ chế xác thực người dùng an toàn.</li>
+                    <li><strong>Tường lửa Web (WAF):</strong> Ngăn chặn các cuộc tấn công như SQL Injection, XSS.</li>
+
+                </ul>
+            </article>
+        </div>
+        </div>
+            <div class="parent-container">
+                <a href="https://topdev.vn/blog/frontend-10-ky-nang-quan-trong-de-tim-viec-de-dang-hon/" target="_blank" class="ad-container">
+                    <img src="images/frontend.png" alt="Kỹ năng Front-end Developer" class="ad-image">
+                </a>
+                <a href="https://careerviet.vn/en/talentcommunity/wiki-career/backend-developer-lam-gi-dieu-kien-de-tro-thanh-lap-trinh-vien-backend.35A51EA4.html" target="_blank" class="ad-container">
+                    <img src="images/backend.jpg" alt="Back-end Developer" class="ad-image">
+                </a>
+                <a href="https://isfh.org/bao-mat-website/" target="_blank" class="ad-container">
+                    <img src="images/websecurity.png" alt="Bảo mật Website" class="ad-image">
+                </a>
+            </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding w3-light-grey">
+        <p>&copy; 2024.2 IT4409 - Công nghệ Web và dịch vụ trực tuyến</p>
+    </footer>
+
+</body>
+</html>

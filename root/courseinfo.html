@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT4409 - Thông tin môn học</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsible.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <!-- Icon ☰ chỉ hiển thị trên iPad & điện thoại -->
+<div class="scroll-container" onclick="toggleDropdown()">☰</div>
+
+<!-- Dropdown menu -->
+<div id="dropdown-menu" class="dropdown-menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="courseinfo.html">Thông tin môn học</a>
+    <a href="webtech.html">Các công nghệ Web</a>
+    <a href="studentinfo.html">Thông tin sinh viên</a>
+</div>
+
+<script>
+function toggleDropdown() {
+    var menu = document.getElementById("dropdown-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+    <!-- Header -->
+    <div class="w3-bar w3-black w3-top">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Trang chủ</a>
+        <a href="courseinfo.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Thông tin môn học</a>
+        <a href="webtech.html" class="w3-bar-item w3-button w3-padding-large">Các công nghệ Web</a>
+        <a href="studentinfo.html" class="w3-bar-item w3-button w3-padding-large">Thông tin sinh viên</a>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px;">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#tt" class="w3-bar-item w3-button">Thông tin</a>
+        <a href="#mt" class="w3-bar-item w3-button">Mục tiêu</a>
+        <a href="#nd" class="w3-bar-item w3-button">Nội dung</a>
+        <a href="#tlmh" class="w3-bar-item w3-button">Tài liệu môn học</a>
+        <a href="#tltk" class="w3-bar-item w3-button">Tài liệu tham khảo</a>
+    </div>
+
+   
+
+    <div class="container">
+        <div class="content">
+              <!-- Main Content -->
+        <div style="margin-left:200px; padding:20px;">
+            <article>
+                <h2 class="w3-text-teal">IT4409/IT4409E - Công nghệ Web và Dịch vụ Trực tuyến</h2>
+                <h3 class="w3-text-teal" id="tt">Thông tin:</h3>
+                <p><strong>Khối lượng (Credits):</strong> 3(2-2-0-6)</p>
+                <p><strong>Học phần tiên quyết:</strong> Không (None)</p>
+                <p><strong>Học phần học trước:</strong> (IT3090 hoặc IT3091) và (IT3100 hoặc IT3600)</p>
+                <p><strong>Học phần song hành:</strong> Không (None)</p>
+
+                <h3 class="w3-text-teal" id="mt">Mục tiêu:</h3>
+                <p>Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển các ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên có khả năng:</p>
+                <ul>
+                    <li>Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho các lĩnh vực khác nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử (eCommerce, eLearning, eGoverment, v.v..)</li>
+                    <li>Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</li>
+                </ul>
+                <p>Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ cần thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.</p>
+
+                <h3 class="w3-text-teal" id="nd">Nội dung:</h3>
+                <ul>
+                    <li>Internet & Web</li>
+                    <li>HTML, CSS, Javascript, DOM, Ajax</li>
+                    <li>Ngôn ngữ & công nghệ Backend (PHP/Java/Python)</li>
+                    <li>Cơ sở dữ liệu cho Web</li>
+                    <li>Mô hình kiến trúc ứng dụng web</li>
+                    <li>Microservice & tích hợp web</li>
+                    <li>An toàn bảo mật web</li>
+                </u>
+
+                <h3 class="w3-text-teal" id="tlmh">Tài liệu môn học:</h3>
+                <ul>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2001%2E%20Web%20Introduction%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">Introduction to WWW</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2002%2E%20HTML%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">HTML</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2003%2E%20CSS%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">CSS</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2004%2E%20Javascript%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">JavaScript</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2005%2E%20DOM%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">DOM and JavaScript API</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2006%2E%20AJAX%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">AJAX</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FSlide%2006%20%28annex%29%20%2D%20AJAX%20Examples%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">AJAX Samples</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2007%2E%20Backend%20by%20Java%20technologies%20%28environment%20setup%29%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">Web backend dev by Java technologies</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FHandout%2008%2E%20Web%20Security%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">Web Security</a></li>
+                </ul>
+
+                <h3 class="w3-text-teal" id="tltk">Tài liệu tham khảo:</h3>
+                <ul>
+                    <li><a href="https://soict.daotao.ai/assets/courseware/v1/6f4a4ac66b6c66ee1f8e3bbc7cb33a6f/asset-v1:SoICT+IT4409+HoangPH+type@asset+block/Part_1._Dynamic_Web_Server_with_Java_Technologies.pdf">Java-based backend</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/personal/hoang_phamhuy_hust_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal%2FGoogle%20OAuth%20%2D%20Technical%20Semina%2Epdf&parent=%2Fpersonal%2Fhoang%5Fphamhuy%5Fhust%5Fedu%5Fvn%2FDocuments%2F01%2E%20SoICT%2F02%2E%20Gi%C3%A1o%20tr%C3%ACnh%2FIT4409%20C%C3%B4ng%20ngh%E1%BB%87%20web%20v%C3%A0%20d%E1%BB%8Bch%20v%E1%BB%A5%20tr%E1%BB%B1c%20tuy%E1%BA%BFn%2Ffinal&ga=1">Google Authentication and Authorization</a></li>
+                    <li><a href="https://husteduvn-my.sharepoint.com/:w:/g/personal/hoang_phamhuy_hust_edu_vn/Ect6DldcdtdAhQaaNYL3b1YBnnpZJJHL6QmEN2fzpLF8VQ?e=9CVe4n">Tài liệu hỗ trợ thực hành</a></li>
+                        <li><a href="https://users.soict.hust.edu.vn/hoangph/textbook/ch06-4.html">HTTPS for Apache</a></li>
+                </ul>
+            </article>
+        </div>
+        </div>
+            <div class="parent-container">
+                 <a href="https://topdev.vn/blog/frontend-10-ky-nang-quan-trong-de-tim-viec-de-dang-hon/" target="_blank" class="ad-container">
+                    <img src="images/frontend.png" alt="Kỹ năng Front-end Developer" class="ad-image">
+                </a>
+                <a href="https://careerviet.vn/en/talentcommunity/wiki-career/backend-developer-lam-gi-dieu-kien-de-tro-thanh-lap-trinh-vien-backend.35A51EA4.html" target="_blank" class="ad-container">
+                    <img src="images/backend.jpg" alt="Back-end Developer" class="ad-image">
+                </a>
+                <a href="https://isfh.org/bao-mat-website/" target="_blank" class="ad-container">
+                    <img src="images/websecurity.png" alt="Bảo mật Website" class="ad-image">
+                </a>
+            </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding w3-light-grey">
+        <p>&copy; 2024.2 IT4409 - Công nghệ Web và dịch vụ trực tuyến</p>
+    </footer>
+
+</body>
+</html>
